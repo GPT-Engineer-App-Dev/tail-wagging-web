@@ -1,5 +1,6 @@
 import { Container, Text, VStack, Heading, Box, Image, Button } from "@chakra-ui/react";
 import { FaPaw } from "react-icons/fa";
+import ChewyLogo from "/images/chewy-logo.svg";
 
 const Index = () => {
   return (
@@ -13,6 +14,11 @@ const Index = () => {
         <Button colorScheme="teal" size="lg" leftIcon={<FaPaw />}>
           Get Started
         </Button>
+      </VStack>
+      <VStack spacing={6}>
+        <Box boxSize="sm">
+          <Image src={ChewyLogo} alt="Chewy Logo" borderRadius="md" />
+        </Box>
       </VStack>
     </Container>
   );
